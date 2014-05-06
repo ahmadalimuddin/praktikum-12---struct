@@ -14,9 +14,11 @@ struct kalender
 	bool kabisat;
 };
 
+kalender rec_kalender;
+
 kalender hari_ini()
 {
-	kalender rec_kalender;
+
 	cout<<"Masukkan Tanggal Hari ini = "; 
 	cin>>rec_kalender.tanggal;
 bulanagain:;
@@ -117,11 +119,9 @@ bulanagain:;
 	system("cls");
 	return rec_kalender;
 }
-kalender Hari_ini;
 
 kalender tanggal_esok()
 {
-	kalender rec_kalender = Hari_ini;
 	int bulan=99;
 
 	if((rec_kalender.bulan == februari)&&(rec_kalender.kabisat == true))
